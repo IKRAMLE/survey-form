@@ -1,47 +1,105 @@
-body{
-    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
-    background-image: none;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    justify-content: center;
-    margin: 200px 200px 200px 200px;
-    border: 4px solid blueviolet;
+/* surveyform.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  background-image: url(https://engineering.fb.com/wp-content/uploads/2016/12/grid-AI.jpg) ;
 }
 
+header {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 20px 0;
+}
+
+#title {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+#description {
+  font-size: 1.2em;
+  margin: 10px 0 0;
+}
+
+main {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgba(6, 8, 0, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 form {
-    width: 0%;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+}
 
-  }
-h1 {
-    font-weight: 400;
-    line-height: 1.2;
-    text-align: center;  }
-  p {
-    font-size: 1.125rem;
-    text-align: center;
-  }
- 
-  h1,p {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-  }
+section {
+  margin-bottom: 20px;
+}
 
-  label {
-    display: block;
-    font-size: 1.125rem;
-    margin-bottom: 0.5rem;
-      }
-      
- label, .dropdown {
-    text-align: center;
- }
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+}
 
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
 
-  
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: #4015db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #859085;
+}
+
+select:invalid {
+  color: gray;
+}
+
+select option {
+  color: black;
+}
+
